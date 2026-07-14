@@ -1,0 +1,30 @@
+{
+  "name": "@alexblack-dev/slugify",
+  "version": "0.1.0",
+  "description": "Transliterate and slugify strings — Cyrillic, Latin, Unicode normalisation",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "author": "Alex Black",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBlack-Dev/slugify.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
