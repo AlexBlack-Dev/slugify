@@ -1,4 +1,4 @@
-﻿# slugify
+# slugify
 
 ![preview](images/preview.svg)
 
