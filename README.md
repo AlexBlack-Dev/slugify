@@ -1,30 +1,30 @@
-# slugify
+﻿# slugify
 
 ![preview](images/preview.svg)
 
-Transliterate and slugify strings — Cyrillic, Latin, Unicode normalisation.
+Transliterate and slugify strings â€” Cyrillic, Latin, Unicode normalisation.
 
 ## Install
 
-`ash
+`ash
 npm install @alexblack-dev/slugify
 `
 
 ## Usage
 
-`	s
+`s
 import { slugify } from '@alexblack-dev/slugify'
 
 slugify('Hello World')           // 'hello-world'
-slugify('Привет, мир!')          // 'privet-mir'
-slugify('Café Zürich')           // 'cafe-zurich'
+slugify('ÐŸÑ€Ð¸Ð²ÐµÑ‚, Ð¼Ð¸Ñ€!')          // 'privet-mir'
+slugify('CafÃ© ZÃ¼rich')           // 'cafe-zurich'
 slugify('  multi   space  ')     // 'multi-space'
 slugify('___foo___bar___')       // 'foo-bar'
 `
 
 ### Options
 
-`	s
+`s
 slugify('Hello World', { separator: '_' })          // 'hello_world'
 slugify('Hello World', { lowercase: false })        // 'Hello-World'
 slugify('Hello   World', { maxConsecutive: 1 })      // 'hello-world'
@@ -40,15 +40,15 @@ slugify('Hello   World', { maxConsecutive: 1 })      // 'hello-world'
 | lowercase | boolean | true | Convert to lowercase |
 | maxConsecutive | number | 1 | Max consecutive separators |
 
-### 	ransliterate(input)
+### ransliterate(input)
 
-`	s
+`s
 import { transliterate } from '@alexblack-dev/slugify'
 
-transliterate('Привет')  // 'Privet'
-transliterate('Čeština') // 'Cestina'
+transliterate('ÐŸÑ€Ð¸Ð²ÐµÑ‚')  // 'Privet'
+transliterate('ÄŒeÅ¡tina') // 'Cestina'
 `
 
 ## License
 
-MIT © [Alex Black](https://github.com/AlexBlack-Dev)
+MIT Â© [Alex Black](https://github.com/AlexBlack-Dev)
